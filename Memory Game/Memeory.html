@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <title>Meme-ory</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Memeory.css">
+</head>
+
+<body>
+    <div class="container toolbar">
+        <div class="col-xs-1" id="guesses">0</div>
+        <div class="col-xs-10" id="title"> How good is your MEMEory? </div>
+        <div class="col-xs-1" id="time">00:00</div>
+    </div>
+
+    <div class="container bottom">
+        <div class="container board" id="memory_board"></div>
+    </div>
+
+    <div id="modal-start">
+        <div class="modal">
+            <span class="close-btn clickable"></span>
+            <div class="modal-title">Instructions:</div>
+            <div class="modal-content">
+                <div> MEMEory is a traditional card matching game with a meme twist. </div>
+                <div> Simply click on 2 cards to reveal their faces. If they match, they will stay face up. </div>
+                <div> Guess in less than 50 guesses, or your "Max Guess" input to win. </div>
+                <div> Ready? Set your theme and difficulty, then press enter key to play. </div>
+                <br>
+                <input id="limit" type="number" placeholder="Max Guesses" step="1" min="1" max="10">
+                <select id="theme">
+                    <option value="classic">Classic</option>
+                    <option value="eighteen">2018</option>
+                    <option value="spongebob">Spongebob</option>
+                </select>
+                <select id="difficulty">
+                    <option value="easy">Easy Peezy (12)</option>
+                    <option value="medium">Extra Meme-dium (16)</option>
+                    <option value="hard">Extra Meme-dium (20)</option>
+                    <option value="master">Meme Master (24)</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="modal-winner" style="display: none;">
+        <div class="modal">
+            <span class="close-btn clickable"></span>
+            <div id="playStats"></div>
+            <div class="modal-title">You're the man now dog!</div>
+            <div class="modal-content">Enter name here:
+                <input type="text" id="highscore" /> </div>
+            <br>
+            <div class="modal-title">Press F to play again.</div>
+        </div>
+    </div>
+
+    <div id="modal-loser" style="display: none;">
+        <div class="modal">
+            <span class="close-btn clickable"></span>
+            <div class="modal-title">Press F to Pay Respects. Or to play again.</div>
+            <br>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="Memeory.js"></script>
+
+</body>
+
+</html>
