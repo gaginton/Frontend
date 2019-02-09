@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial";
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.9;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.header span {
+  padding: 0px 40px;
+}
+.header > span:hover {
+  color: gray;
+}
+.header > img.logo {
+  vertical-align: middle;
+  height: 40px;
+}
+
+.fixalign {
+  height: 40px;
+}
+
+.stripe {
+  justify-content: space-between;
+  text-align: center;
+  background-color: black;
+}
+img {
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+.stripe img.promo {
+  background-size: contain;
+  background-position: center;
+  padding: 5px;
+  display: flex;
+  vertical-align: middle;
+  padding-top: 55px;
+}
+.stripe img.promo.x {
+  padding-top: 35px;
+}
+
+.iphoneXS {
+  height: 560px;
+  padding: 10px;
+  display: list-item;
+  color: white;
+  border-bottom: 15px solid white;
+}
+#welcomebig {
+  margin: 10px 0px 10px 0px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.link {
+  font-size: 20px;
+  font-weight: 300;
+  padding-right: 20px;
+  color: blue;
+}
+
+.iphoneXR {
+  height: 560px;
+  display: list-item;
+  color: white;
+}
+#Brilliant {
+  margin: 20px 0px 20px 0px;
+  font-size: 25px;
+  font-weight: 500;
+}
+#preorder {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.watch {
+  height: 400px;
+  width: 100%;
+  background-color: #fafafa;
+  color: black;
+  display: inline-flex;
+}
+.allnew {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0px 20px 0px;
+}
+.watchleft {
+  margin: 50px 0px 0px 300px;
+}
+.watchpic {
+  height: 400px;
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: 100%;
+  grid-template-columns: 1fr 1fr;
+  border: 10px solid white;
+  color: #fafafa;
+  grid-gap: 10px;
+  background-color: white;
+}
+.gridheader {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 30px 0px 5px 0px;
+}
+.gridsubtext {
+  font-size: 20px;
+  font-weight: 200;
+  margin: 5px;
+}
+.gridimage {
+  object-fit: contain;
+  border-bottom: 0px;
+  height: 250px;
+}
+
+.music {
+  height: 400px;
+  background-image: url("../Images/apple_music_large.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#musicpromo {
+  padding-top: 22px;
+}
+#musiclogo {
+  padding: 220px 0px 0px 0px;
+}
+
+.airpods {
+  height: 400px;
+  background-color: #fafafa;
+  color: black;
+}
+.giveback {
+  height: 400px;
+  background-color: #fafafa;
+  color: black;
+  background-image: url("../images/give_back_large.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.homepod {
+  height: 400px;
+  background-color: #fafafa;
+  border-color: black;
+  color: black;
+}
+.macbook {
+  height: 400px;
+  border-right: 5px;
+  background-image: url("../Images/macbook_pro_performance_large.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ipad {
+  height: 400px;
+  background-color: #fafafa;
+  color: black;
+}
+#footercontainer {
+  width: 100%;
+  align-content: center;
+  height: 350px;
+  background-color: #f2f2f2;
+}
+
+.footer {
+  width: 75%;
+  text-align: left;
+  color: black;
+  font-size: 10px;
+  border-bottom: 0px;
+  padding: 30px 0px 30px 150px;
+  display: inline-block;
+  background-color: #f2f2f2;
+}
+
+#footergrids > div:hover {
+  text-decoration: underline;
+}
+#privacygrid > span:hover {
+  text-decoration: underline;
+}
+#finalline {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+}
+#footergrids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 15px;
+  grid-column-gap: 3px;
+}
+#privacygrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  width: 500px;
+  text-align: center;
+}
+#flag {
+  text-align: right;
+}
